@@ -15,10 +15,10 @@ for i in range (indexList[0], indexList[1]):
     z = str(x[i]).split(">")[a].split("<")[0]
     if '<a name="' in str(x[i]):
         print(z)
-    if 'a href="by-club' in str(x[i]):
-        flag = True if "S.F." in z else False
+    if '<a href="by-club' in str(x[i]):
+        flag = True if "S.F." in z else False # only display the concerts in S.F. I'm not tryna go to San Jose cmon
         if flag:
             print("\t" + z)
-    if 'a href="by-band' in str(x[i]):
+    if '<a href="by-band' in str(x[i]):
         if flag:
             print("\t\t" + z)
