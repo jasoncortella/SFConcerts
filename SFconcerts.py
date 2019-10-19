@@ -17,6 +17,7 @@ for i in range (indexList[0], indexList[1]):
         print(z)
     if '<a href="by-club' in str(x[i]):
         flag = True if "S.F." in z else False # only display the concerts in S.F. I'm not tryna go to San Jose cmon
+        z = z.split(",")[0] 
         if flag:
             print("\t" + z)
     if '<a href="by-band' in str(x[i]):
