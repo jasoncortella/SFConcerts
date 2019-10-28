@@ -4,7 +4,7 @@
 People of the S.F. Bay Area. Ever been at the computer, and wondered, 'hmm, any decent live music this week?' Well, now you can instantly check from the command line!  Big thanks to http://www.foopee.com/punk/the-list/ for the data, this is simply a tool to instantly check the site from the command line.
 
 ## Usage
-1 - Download SFConcerts.py
+1 - Download SFconcerts.py
 
 2 - Input desired location and date settings in the head of the script
 
