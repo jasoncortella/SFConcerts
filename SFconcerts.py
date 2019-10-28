@@ -1,7 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime
 
-url = "http://www.foopee.com/punk/the-list/by-date.0.html"
+day = datetime.now().weekday() # 0/1/2/3/4/5/6 corresponds to m/t/w/r/f/sa/su
+page = 0 if day != 0 else 1 # If the script is ran on a monday, the second page must be used due to the site's update frequency
+url = "http://www.foopee.com/punk/the-list/by-date.{}.html".format(page)
 page = requests.get(url)
 soup = BeautifulSoup(page.text, 'html.parser')
 x = soup.find_all('a') 
