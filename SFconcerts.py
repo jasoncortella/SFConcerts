@@ -1,7 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
-from datetime import datetime
-
 #SETTINGS ------------------------------------------------------------------------------------------------------------------------
 
 daysToDisplay = 2  # Select the number of days of concerts to display.
@@ -18,6 +14,9 @@ cities.append('S.F.')
 
 #SETTINGS ------------------------------------------------------------------------------------------------------------------------
 
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
 
 day = datetime.now().weekday()
 start = 0 if day != 0 else 1 # If the script is ran on a monday, the second page must be used due to the site's update frequency
