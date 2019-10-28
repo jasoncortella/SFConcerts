@@ -1,7 +1,11 @@
 # SFConcerts
 
 ## What is this?
-People of the S.F. Bay Area. Ever been at the computer, and wondered, 'hmm, any decent live music this week?' Well, now you can instantly check from the command line!  Big thanks to http://www.foopee.com/punk/the-list/ for the data, this is simply a tool to instantly check the site from the command line.
+Live in the S.F. Bay Area?
+
+Ever wondered, 'Hmm, any decent live music this week?'
+
+Use this tool to instantly check from the command line!
 
 ## Usage
 1 - Download SFconcerts.py
@@ -9,3 +13,6 @@ People of the S.F. Bay Area. Ever been at the computer, and wondered, 'hmm, any 
 2 - Input desired location and date settings in the head of the script
 
 3 - Input "python SFconcerts.py" into the command line. Bingo
+
+## Credits
+Big thanks to http://www.foopee.com/punk/the-list/ for the data, this is simply a tool to instantly check the site from the command line.
