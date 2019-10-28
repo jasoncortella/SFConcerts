@@ -4,13 +4,13 @@ from datetime import datetime
 
 #SETTINGS ------------------------------------------------------------------------------------------------------------------------
 
-daysToDisplay = 10  # Select the number of days of concerts to display.
+daysToDisplay = 2  # Select the number of days of concerts to display.
                    # Currently, can only display through next Sunday, such that the max is 8-14 depending on day of the week
 
 cities = []        # Select cities to display. Comment out undesired cities
                    # Note - Only cities near S.F. included. See http://www.foopee.com/punk/the-list/ for full list of cities
 #cities.append('Alameda')
-#cities.append('Berkeley')
+cities.append('Berkeley')
 cities.append('Oakland')
 cities.append('S.F.')
 #cities.append('San Jose')
@@ -51,7 +51,7 @@ for j in range(7 - day): # Displays remaining concerts for the week
     for i in range (indexList1[j], indexList1[j+1]):
         field = (2 if i == indexList1[j] else 1) # if on field date field, selects date, otherwise selects venue / artist
         text = str(response1[i]).split(">")[field].split("<")[0]
-        if '<field name="' in str(response1[i]):
+        if '<a name="' in str(response1[i]):
             print(text)
         if '<a href="by-club' in str(response1[i]):
             Flag = True if any([city in text for city in cities]) else False # only display the concerts in selected cities
