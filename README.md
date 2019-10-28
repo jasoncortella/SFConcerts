@@ -5,5 +5,7 @@ People of San Francisco. Ever been at the computer, and wondered, 'hmm, any dece
 
 ## Usage
 1 - Download SFConcerts.py
+
 2 - Input desired location and date settings in the head of the script
+
 3 - Input "python SFconcerts.py" into the command line. Bingo
